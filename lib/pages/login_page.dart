@@ -88,7 +88,16 @@ class _LoginPageState extends State<LoginPage> {
                           ),
                         ),
                       ),
-                      TextField(),
+                      TextField(
+                        decoration: InputDecoration(
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                              color: AppColor.secondary,
+                              width: width * 0.005,
+                            ),
+                          ),
+                        ),
+                      ),
                     ],
                   ),
                   Column(
@@ -111,6 +120,12 @@ class _LoginPageState extends State<LoginPage> {
                         obscureText: _obscure,
                         controller: _passwordController,
                         decoration: InputDecoration(
+                          focusedBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                              color: AppColor.secondary,
+                              width: width * 0.005,
+                            ),
+                          ),
                           suffixIcon: IconButton(
                             onPressed: _obscurePassword,
                             icon: Icon(
