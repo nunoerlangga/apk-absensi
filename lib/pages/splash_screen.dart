@@ -1,5 +1,6 @@
 import 'dart:math' as math;
 
+import 'package:application_sizie/pages/login_page.dart';
 import 'package:application_sizie/shered/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
@@ -13,13 +14,24 @@ class SplashScreen extends StatefulWidget {
 
 class _SplashScreenState extends State<SplashScreen> {
   @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    Future.delayed(Duration(seconds: 3), () {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (context) => LoginPage()),
+      );
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     double width = AppSize.width(context);
     double height = AppSize.height(context);
 
     return Scaffold(
       backgroundColor: AppColor.background,
-
       body: Stack(
         alignment: Alignment.center,
         children: [
@@ -244,7 +256,7 @@ class SegitigaAtasClipper extends CustomClipper<Path> {
   @override
   Path getClip(Size size) {
     Path path = Path();
-    path.lineTo(0, 0);
+    path.moveTo(0, 0);
     path.lineTo(0, size.height);
     path.lineTo(size.width, 0);
     path.close();

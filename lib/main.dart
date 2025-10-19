@@ -1,3 +1,4 @@
+import 'package:application_sizie/pages/login_page.dart';
 import 'package:application_sizie/pages/splash_screen.dart';
 import 'package:flutter/material.dart';
 
