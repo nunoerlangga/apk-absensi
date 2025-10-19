@@ -84,11 +84,15 @@ class _LoginPageState extends State<LoginPage> {
                             color: AppColor.secondary,
                             fontSize: width * 0.04,
                             fontFamily: 'Poppins',
-                            height: 1,
                           ),
                         ),
                       ),
                       TextField(
+                        style: TextStyle(
+                          color: AppColor.secondary,
+                          fontSize: width * 0.04,
+                          fontFamily: 'Poppins',
+                        ),
                         decoration: InputDecoration(
                           focusedBorder: UnderlineInputBorder(
                             borderSide: BorderSide(
@@ -112,11 +116,15 @@ class _LoginPageState extends State<LoginPage> {
                             color: AppColor.secondary,
                             fontSize: width * 0.04,
                             fontFamily: 'Poppins',
-                            height: 1,
                           ),
                         ),
                       ),
                       TextField(
+                        style: TextStyle(
+                          color: AppColor.secondary,
+                          fontSize: width * 0.04,
+                          fontFamily: 'Poppins',
+                        ),
                         obscureText: _obscure,
                         controller: _passwordController,
                         decoration: InputDecoration(
@@ -157,7 +165,6 @@ class _LoginPageState extends State<LoginPage> {
                           color: AppColor.background,
                           fontSize: width * 0.04,
                           fontFamily: 'Poppins',
-                          height: 1,
                         ),
                       ),
                     ),
